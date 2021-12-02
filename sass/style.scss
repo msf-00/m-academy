@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    .logo{
+        align-content: center;
+        img{
+            height: 6rem;
+            padding: 6px;
+        }
+    }
+
+    .navBar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-between;
+        .browser{
+            background-color: darkcyan;
+            width: 5rem;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            img{
+                margin: 5px;
+                height: 30px;
+            }
+        }
+        .cart{
+            background-color: blueviolet;
+            position: relative;
+            width: 5rem;
+        }
+    }
+}
+#main{
+    display: flex;
+    flex-direction: column;
+
+    .mainContent{
+        background-color: #02308e;
+        display: flex;
+        justify-content: center;
+        .cardContainer{
+            display: grid;
+            gap: 1rem;
+            margin: 1rem;
+            .cardCourse-tic{
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                width: 16rem;
+                border-radius: 8px;
+                box-shadow: 0 20px 40px -14px rgb(0 0 0 / 100%);
+                align-items: center;
+                background-color: rgb(88, 189, 223);
+                border: 2px solid black;
+                padding: 10px;
+                .cardMedia{
+                    text-align: center;
+                    img{
+                        height: 9rem;
+                        margin: 5px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .cardCourse-bit{
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                width: 16rem;
+                border-radius: 8px;
+                box-shadow: 0 20px 40px -14px rgb(0 0 0 / 100%);
+                align-items: center;
+                background-color: #d331a9;
+                border: 2px solid black;
+                padding: 10px;
+                .cardMedia{
+                    text-align: center;
+                    img{
+                        height: 9rem;
+                        margin: 5px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .cardCourse-fin{
+                display: flex;
+                flex-direction: column;
+                background-color: #4e92e8;
+                width: 16rem;
+                border-radius: 8px;
+                box-shadow: 0 20px 40px -14px rgb(0 0 0 / 100%);
+                align-items: center;
+                border: 2px solid black;
+                padding: 10px;
+                .cardMedia{
+                    text-align: center;
+                    img{
+                        height: 9rem;
+                        margin: 5px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+#footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 3%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: cyan;
+    text-align: center;
+}
